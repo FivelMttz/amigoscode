@@ -21,6 +21,14 @@ public class main
         return "Hello World";
     }
 
+    @GetMapping("/HEROKU")
+    public String getHeroku()
+    {
+        return "Hello Heroku";
+    }
+
+
+
     @GetMapping("/image")
     public String getImage()
     {
