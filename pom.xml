@@ -15,7 +15,7 @@
 	<name>amigosCode</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>17</java.version>
+		<java.version>12.5</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
