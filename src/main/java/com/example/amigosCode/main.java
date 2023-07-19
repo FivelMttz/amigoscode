@@ -21,5 +21,21 @@ public class main
         return "Hello World";
     }
 
+    @GetMapping("/image")
+    public String getImage()
+    {
+        return "  https://example.com/images/image.jpg ";
+    }
+
+    @GetMapping("/Saludo")
+    public GreetResponse getSaludo()
+    {
+        return new GreetResponse("Hola");
+
+    }
+
+    record GreetResponse(String string){}
+
+
 
 }
