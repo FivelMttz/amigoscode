@@ -24,7 +24,7 @@ public class main
     @GetMapping("/HEROKU")
     public String getHeroku()
     {
-        return "Hello Heroku";
+        return "Hello Fivel Heroku";
     }
 
 
