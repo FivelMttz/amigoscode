@@ -5,6 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
 @SpringBootApplication
 public class main
@@ -24,7 +26,7 @@ public class main
     @GetMapping("/HEROKU")
     public String getHeroku()
     {
-        return "Hello Heroku";
+        return "Hello Fivel Heroku";
     }
 
 
@@ -44,6 +46,27 @@ public class main
 
     record GreetResponse(String string){}
 
+    @GetMapping("/SaludoObject")
+    public GreetResponseObject getSaludoObject()
+    {
+        return new GreetResponseObject("OneDirection",List.of("Goku","Yamcha"),new Person("Bie"));
+
+    }
+
+
+
+
+
+
+
+    record Person (String name)
+    {
+
+    }
+        record GreetResponseObject(String string, List<String>listaDeElementos, Person person)
+        {
+
+        }
 
 
 }
